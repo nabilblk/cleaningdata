@@ -29,8 +29,8 @@ indexToAnalyze <- grep(meanStdPattern,features[, 2])
 X <- X[, indexToAnalyze]
 # Set Column names of X with the Features Name 
 names(X) <- features[indexToAnalyze,2]
-# Clean Variables Names 
-names(X) <- substr(names(X), 1, nchar(names(X))-2) 
+# Clean Variables Names remove () from column names
+names(X) <- gsub("\\(|\\)", "", names(X))
 
 ## 3. Uses descriptive activity names to name the activities in the data set
 
