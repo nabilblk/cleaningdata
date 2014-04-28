@@ -22,7 +22,7 @@ After executing the script, one may call :
 
 <pre>
 head(meanVars[,1:4], n=20)
-   subject           activity tBodyAcc-mean()-X tBodyAcc-mean()-Y
+   subject           activity       tBodyAcc-mean-X tBodyAcc-mean-Y
 1        1             LAYING         0.2215982      -0.040513953
 2        1            SITTING         0.2612376      -0.001308288
 3        1           STANDING         0.2789176      -0.016137590
